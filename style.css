@@ -60,7 +60,7 @@ div.content {
 /* User Stories style */
 .user-story {
     display: inline-block;
-    width: 500px;
+    width: 600px;
     margin: 5px;
 }
 .user-story table {
@@ -72,7 +72,7 @@ div.content {
     border: 2px solid black;
 }
 .user-story td.subject {
-    height: 200px;
+    height: 100px;
     padding: 20px;
 }
 .user-story tr:nth-child(3) td {
@@ -121,7 +121,17 @@ div.content {
     margin: 0.5cm;
 }
 @media print {
-    body {margin-top: 8mm; margin-bottom: 8mm;
-        margin-left: 5mm; margin-right: 5mm}
+    body {margin:0;}
+    div.content {
+        padding: 0px;
+    }
+    .user-story .subject
+    {
+        font-size: 30px;
+    }    
+    .user-story
+    {
+            margin: 0 5px 5px 0px;
+    }
     .no-print {display: none;}
 }

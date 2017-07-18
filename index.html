@@ -51,16 +51,11 @@
         <div class="user-story" ng-repeat="c in content" ng-if="isUserStories">
             <table>
                 <tr>
-                    <td colspan="4">En tant que {{ c.enTantQue }}</td>
+                    <td colspan="3" class="subject">{{ c.subject }}</td>
                 </tr>
                 <tr>
-                    <td colspan="4" class="subject">{{ c.subject }}</td>
-                </tr>
-                <tr>
-                    <td>{{ c.sprint }}</td>
                     <td><span ng-if="c.ref">#</span><span ng-if="!c.ref" style="color:white">.</span>{{ c.ref }}</td>
-                    <td>{{ c.points }}</td>
-                    <td></td>
+                    <td>{{ c.points }} PTS</td>
                 </tr>
             </table>
         </div>
